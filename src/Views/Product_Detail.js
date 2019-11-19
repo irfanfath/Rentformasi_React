@@ -3,7 +3,7 @@ import Related_Product from "../Component/Related_Product";
 import axios from "axios"
 import Modals from "../Component/Modals/Modals";
 import Profile from "../Component/Card/Profile";
-
+import Date_Form from "../Component/Forms/Date_Form"
 
 class Product_Detail extends Component{
     state = {
@@ -40,10 +40,9 @@ class Product_Detail extends Component{
                                 <div className="full-width">
                                     <form data-node-type="commerce-add-to-cart-form" data-commerce-sku-id="5bae129d35e11310a69a82d2" data-loading-text="Adding to cart..." data-commerce-product-id="5bae129d1c68cc806025c48d" className="w-commerce-commerceaddtocartform add-to-cart">
                                         <label htmlFor="quantity-652131f9f904302b3296412795400fe8" className="label">Jumlah Sewa</label>
-                                        <input type="number" id="quantity-652131f9f904302b3296412795400fe8" name="commerce-add-to-cart-quantity-input" min="1" className="w-commerce-commerceaddtocartquantityinput input quantity-input" defaultValue="1" />
+                                        <input type="bootstrap-datetimepicker" id="quantity-652131f9f904302b3296412795400fe8" name="commerce-add-to-cart-quantity-input" min="1" className="w-commerce-commerceaddtocartquantityinput input quantity-input" defaultValue="1" />
                                         <label htmlFor="quantity-652131f9f904302b3296412795400fe8" className="label">Tanggal Sewa</label>
-                                        <input type="option" id="quantity-652131f9f904302b3296412795400fe8" name="commerce-add-to-cart-quantity-input" min="1" className="w-commerce-commerceaddtocartquantityinput input quantity-input" defaultValue="1" />
-                                       
+                                        <Date_Form/>  
                                     </form>
                                     <Modals/>
                                 </div>
