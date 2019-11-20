@@ -15,10 +15,11 @@ class DateForm extends React.Component {
  
   render() {
     return (
-      <DatePicker
+      <DatePicker className="input subscribe-input w-input"
         selected={this.state.startDate}
         onChange={this.handleChange}
       />
+      
     );
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import Keranjang from "../Modals/Keranjang";
+import ButtonSuccess from "../Button/ButtonSuccess";
 
 class HalamanUtama extends Component{
     render(){
@@ -16,18 +17,10 @@ class HalamanUtama extends Component{
                                 <NavLink to="/barang" className="nav-link w-nav-link">Sewa Barang</NavLink>
                                 <NavLink to="/jasa" className="nav-link w-nav-link">Sewa Jasa</NavLink>
                                 <NavLink to="/bantuan" className="nav-link w-nav-link">Bantuan</NavLink>
-                                <NavLink to="/akun" className="nav-link w-nav-link">Masuk/Daftar</NavLink>                              
                             </nav>
                             <Keranjang/>
-                            {/* <NavLink to="/cart" className="w-commerce-commercecartopenlink cart-button w-inline-block">
-                                    <div className="w-inline-block">Keranjang</div>
-                                    <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5baf75c3bf02346640399fec_cart-icon.svg" alt="" className="cart-icon" />
-                                    <div className="w-commerce-commercecartopenlinkcount item-count">0</div>
-                            </NavLink> */}
-                            <div className="menu-button w-nav-button">
-                                <div className="w-icon-nav-menu"></div>
-                            </div>
                         </div>
+                        <NavLink to="/akun" className="nav-link w-nav-link"><ButtonSuccess/></NavLink>
                     </div>
                 </div>
             </div>

@@ -1,17 +1,17 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 class HalamanUtama extends Component{
     render(){
         return(
     <div className="page-wrapper">
-
         <div className="section hero-section">
             <div className="wrapper text-white">
                 <div className="hero-intro"> 
                     <div className="title">
                         Penuhi Kebutuhan Anda Dengan Biaya Terjangkau
                     </div>
-                    <h1>100% Aman & Nyaman</h1><a href="#" className="button w-button">Lihat Katalog</a>
+                    <h1>100% Aman & Nyaman</h1><NavLink to="/barang" className="button w-button">Lihat Katalog</NavLink>
                 </div>
             </div>
         </div>

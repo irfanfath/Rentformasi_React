@@ -3125,9 +3125,9 @@ table.table a.btn.btn-success {
   color: #fff; }
 
 .btn-outline-success {
-  color: #00c851 !important;
+  color: #a5c926 !important;
   background-color: transparent !important;
-  border: 2px solid #00c851 !important; }
+  border: 2px solid #a5c926 !important; }
   .btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success:active, .btn-outline-success:active:focus, .btn-outline-success.active {
     color: #00c851 !important;
     background-color: transparent !important;
@@ -5030,7 +5030,7 @@ body.scrollable {
 
 .modal-dialog .modal-content {
   border: 0;
-  border-radius: 0.125rem;
+  border-radius: 20px;
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
   .modal-dialog .modal-content .modal-header {
     border-top-left-radius: 0.125rem;

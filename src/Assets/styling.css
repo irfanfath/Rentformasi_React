@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
 }
 
 article,
@@ -350,6 +350,11 @@ html.w-mod-touch * {
     text-decoration: none;
     cursor: pointer;
     border-radius: 0
+}
+
+.w-button:hover {
+    text-decoration: underline;
+    color: #fff
 }
 
 input.w-button {
@@ -5179,6 +5184,7 @@ p {
 
 .footer-link:hover {
     text-decoration: underline;
+    color: #fff
 }
 
 .footer-bottom {
@@ -6104,7 +6110,7 @@ p {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 60%;
+    width: 65%;
     padding-right: 10%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6140,7 +6146,7 @@ p {
     margin-bottom: 32px;
     font-family: 'Varela Round', sans-serif;
     color: #a5c926;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 32px;
     font-weight: 400;
 }

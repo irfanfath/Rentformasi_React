@@ -16,28 +16,22 @@ class MetodePembayaran extends Component{
                             type="radio"
                             label="Transfer Bank"
                             name="formHorizontalRadios"
-                            id="formHorizontalRadios1"
+                            id="pembayaranradios1"
                             />
                             <Form.Check
                             type="radio"
                             label="Kartu Kredit"
                             name="formHorizontalRadios"
-                            id="formHorizontalRadios2"
+                            id="pembayaranradios2"
                             />
                             <Form.Check
                             type="radio"
                             label="Cash"
                             name="formHorizontalRadios"
-                            id="formHorizontalRadios3"
+                            id="pembayaranradios3"
                             />
                         </Col>
-                    </div>
-                        <div className="w-commerce-commercecartfooter cart-footer">
-                            <div className="w-commerce-commercecartlineitem">
-                                <div>Biaya Pengiriman</div>
-                                <div className="w-commerce-commercecartordervalue">$30.00</div>
-                            </div>
-                        </div>  
+                    </div> 
                     </form>
                 </div>
             </div>

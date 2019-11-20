@@ -8,7 +8,7 @@ class Footer extends Component{
                 <div className="wrapper text-white">
                     <div className="footer">
                         <div className="footer-left">
-                            <a href="/" className="footer-brand w-nav-brand w--current">
+                            <a className="footer-brand w-nav-brand w--current">
                                 <div>Rentformasi</div>
                             </a>
                         </div>

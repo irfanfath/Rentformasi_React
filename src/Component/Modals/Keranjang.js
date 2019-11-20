@@ -51,7 +51,8 @@ class Keranjang extends React.Component {
             <input type="submit" value="Sewa Lagi" className="w-commerce-commerceaddtocartbutton button" 
             onClick={() => this.toggleModal("exampleModal")}/>
             <NavLink to="/proses_transaksi" className="nav-link-product w-nav-link">
-                <input type="submit" value="Bayar Sekarang" className="w-commerce-commerceaddtocartbutton button" />
+            <input type="submit" value="Bayar Sekarang" className="w-commerce-commerceaddtocartbutton button"
+            onClick={() => this.toggleModal("exampleModal")}/>
             </NavLink>
           </div>
         </Modal>

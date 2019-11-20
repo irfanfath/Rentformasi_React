@@ -10,12 +10,14 @@ import About from "./Views/About";
 import Syarat from "./Views/Syarat";
 import Product_Detail from "./Views/Product_Detail";
 import Proses_Transaksi from "./Views/Proses_Transaksi";
+import DynamicScrollToTop from "./Component/DynamicScrollToTop";
  
 class Main extends Component {
   render() {
     return (
         <HashRouter>
           <Header/>
+          <DynamicScrollToTop/>
             <Route exact path="/" component={HalamanUtama}/>
             <Route path="/barang" component={Barang}/>
             <Route path="/jasa" component={Jasa}/>

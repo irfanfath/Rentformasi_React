@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios"
-import JasaPengiriman from "../Component/Forms/JasaPengiriman";
 import MetodePembayaran from "../Component/Forms/MetodePembayaran";
-import Forms from "../Component/Forms/Forms";
 import CartTotal from "../Component/Sidebars/CartTotal";
 import InputPage from "../Component/Forms/InputPage";
 
@@ -37,11 +35,9 @@ class Proses_Transaksi extends Component{
                             <div className="contact-form-wrapper">
                                 <h4 className="contact-heading">Lengkapi Data Anda</h4>
                                 <InputPage/>
-                                <Forms/>
                                 <input type="submit" value="Sewa Sekarang" className="w-commerce-commerceaddtocartbutton button" />
                             </div>
                             <div className="contact-info">
-                                <JasaPengiriman/>
                                 <CartTotal/>
                                 <MetodePembayaran/>
                             </div>
