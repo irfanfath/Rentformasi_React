@@ -5,7 +5,6 @@ class Bantuan extends Component{
     render(){
         return(
             <div className="section">
-
                 <div className="section no-padding-top">
                     <div className="wrapper">
                         <div className="section no-padding-vertical">

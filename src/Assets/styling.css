@@ -2669,7 +2669,6 @@ textarea.w-select {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 16px;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;

@@ -6,7 +6,6 @@ import Modals from "../Component/Modals/Modals";
 import Profile from "../Component/Card/Profile";
 import DateForm from "../Component/Forms/DateForm";
 import RatingPage from "../Component/Rating/RatingPage";
-import TabsDefault from "../Component/Tabs/TabsDefault";
 
 class Product_Detail extends Component{
     state = {
