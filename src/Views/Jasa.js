@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
-import Kategori_jasa from "../Component/Konten/Kategori_jasa";
 import Sidebar from "../Component/Konten/Sidebar";
 import Cari from "../Component/Konten/Cari";
+import Sorting from "../Component/Konten/Sorting";
 
 class Jasa extends Component{
     render(){
@@ -12,7 +11,7 @@ class Jasa extends Component{
             <div className="wrapper">
                 <div className="shop-header">
                     <h3 className="no-margin w-hidden-small w-hidden-tiny">Semua Jasa</h3>
-                    <Kategori_jasa/>
+                    <Sorting/>
                     <div className="shop-header-line">
                         <div className="shop-header-color green w-hidden-small w-hidden-tiny"></div>
                     </div>

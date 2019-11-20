@@ -1,15 +1,8 @@
-import React, { Component } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import React from "react";
 
-class Cart extends Component{
-    render(){
-        return(
-            <div className="w-cart-review cart-review">
-                <div className="w-commerce-commercecartheader cart-header">
-                    <h5 className="w-commerce-commercecartheading">Total Biaya</h5>            
-                </div>
-                <div className="w-commerce-commercecartformwrapper">
-                    <form className="w-commerce-commercecartform">
+const Cart= (props) => {
+    return(
+                    <div className="modal-body">
                         <div className="w-commerce-commercecartlist cart-list">
                             <div className="w-commerce-commercecartitem">
                                 <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae12942ca03553bf0d536c_33903-2-plush-toy-transparent-image-min.png" alt="" sizes="50px" srcSet="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae12942ca03553bf0d536c_33903-2-plush-toy-transparent-image-min-p-500.png 500w, https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae12942ca03553bf0d536c_33903-2-plush-toy-transparent-image-min.png 1200w" />
@@ -30,15 +23,16 @@ class Cart extends Component{
                         </div>
                         <div className="w-commerce-commercecartfooter cart-footer">
                             <div className="w-commerce-commercecartlineitem">
-                                <div>Subtotal</div>
+                                <div>Total</div>
                                 <div className="w-commerce-commercecartordervalue">$30.00</div>
                             </div>
-                        </div>  
-                    </form>
-                </div>
-            </div>
-        )
-    }
+                        </div> 
+                    </div>
+    )
 }
 
 export default Cart;
+
+
+                   
+                   

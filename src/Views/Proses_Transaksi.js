@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
 import axios from "axios"
-import Cart from "../Component/Cart";
-import DataPemesan from "../Component/Forms/DataPemesan"
 import JasaPengiriman from "../Component/Forms/JasaPengiriman";
 import MetodePembayaran from "../Component/Forms/MetodePembayaran";
 import Forms from "../Component/Forms/Forms";
+import CartTotal from "../Component/Sidebars/CartTotal";
+import InputPage from "../Component/Forms/InputPage";
 
 class Proses_Transaksi extends Component{
     state = {
@@ -37,12 +36,13 @@ class Proses_Transaksi extends Component{
                         <div className="contacts">
                             <div className="contact-form-wrapper">
                                 <h4 className="contact-heading">Lengkapi Data Anda</h4>
+                                <InputPage/>
                                 <Forms/>
                                 <input type="submit" value="Sewa Sekarang" className="w-commerce-commerceaddtocartbutton button" />
                             </div>
                             <div className="contact-info">
                                 <JasaPengiriman/>
-                                <Cart/>
+                                <CartTotal/>
                                 <MetodePembayaran/>
                             </div>
                             

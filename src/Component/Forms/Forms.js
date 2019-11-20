@@ -18,7 +18,7 @@ class Forms extends React.Component {
     return (
       <>
         <Form>
-          <Row>
+          {/* <Row>
           <Col md="6">
                 <label>Nama Pemesan</label>
               <FormGroup>
@@ -39,8 +39,8 @@ class Forms extends React.Component {
                 />
               </FormGroup>
             </Col>
-          </Row>
-          <Row>
+          </Row> */}
+          {/* <Row>
             <Col md="6">
             <label>Nomor Telepon Pemesan</label>
               <FormGroup>
@@ -110,25 +110,25 @@ class Forms extends React.Component {
                 />
               </FormGroup>
             </Col>
-          </Row>
+          </Row> */}
           <Row>
             <div className="custom-control custom-control-alternative custom-checkbox mb-3">
                 <input
                     className="custom-control-input"
-                    id="customCheck5"
+                    id="customCheck1"
                     type="checkbox"
                 />
-                <label className="custom-control-label" htmlFor="customCheck5">
+                <label className="custom-control-label" htmlFor="customCheck1">
                     Data Sudah Benar
                 </label>
             </div>
             <div className="custom-control custom-control-alternative custom-checkbox mb-3">
                 <input
                     className="custom-control-input"
-                    id="customCheck5"
+                    id="customCheck2"
                     type="checkbox"
                 />
-                <label className="custom-control-label" htmlFor="customCheck5">
+                <label className="custom-control-label" htmlFor="customCheck2">
                     Saya sudah memahami dan setuju dengan syarat dan ketentuan yang berlaku
                 </label>
             </div>

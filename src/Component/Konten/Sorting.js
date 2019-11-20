@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
 import Urutan from "../Dropdowns/Urutan";
 import Lokasi from "../Dropdowns/Lokasi";
 
-class Kategori_barang extends Component{
+class Sorting extends Component{
     render(){
         return(
             <div className="shop-categories-wrapper">
@@ -18,4 +17,4 @@ class Kategori_barang extends Component{
     }
 }
 
-export default Kategori_barang;
+export default Sorting;

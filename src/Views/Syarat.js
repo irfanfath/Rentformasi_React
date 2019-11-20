@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
-import Isi from "../Component/Konten/Syarat";
+import Isi from "../Component/Konten/Isi_Syarat";
 
 class Bantuan extends Component{
     render(){

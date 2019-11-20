@@ -1,8 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Main from "./Main";
-import "./styling.css";
-import "./Assets/bootstrap.min.css";
+import "./Assets/styling.css";
+// import "./Assets/bootstrap.min.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "./Assets/mdb.min.css"
+// import "mdbreact/dist/css/mdb.css";
  
 ReactDOM.render(
   <Main/>, 

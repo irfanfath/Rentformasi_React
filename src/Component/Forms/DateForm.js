@@ -2,7 +2,7 @@ import React from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-class Date_Form extends React.Component {
+class DateForm extends React.Component {
   state = {
     startDate: new Date()
   };
@@ -23,4 +23,4 @@ class Date_Form extends React.Component {
   }
 }
 
-export default Date_Form;
+export default DateForm;

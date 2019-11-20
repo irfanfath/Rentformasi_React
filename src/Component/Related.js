@@ -1,10 +1,7 @@
-import { Route, NavLink, HashRouter } from "react-router-dom";
-import React, { Component } from "react";
+import React from "react";
 
-
-class Related_Product extends Component{
-    render(){
-        return(
+const Related= (props) => {
+    return(
             <div className="section">
                 <div className="wrapper">
                     <div className="shop-header">
@@ -47,8 +44,7 @@ class Related_Product extends Component{
                     </div>
                 </div>
             </div>
-        )
-    }
+    )
 }
 
-export default Related_Product;
+export default Related;

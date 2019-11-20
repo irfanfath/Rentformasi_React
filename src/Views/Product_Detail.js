@@ -1,9 +1,12 @@
 import React, { Component } from "react";
-import Related_Product from "../Component/Related_Product";
 import axios from "axios"
+
+import Related from "../Component/Related";
 import Modals from "../Component/Modals/Modals";
 import Profile from "../Component/Card/Profile";
-import Date_Form from "../Component/Forms/Date_Form"
+import DateForm from "../Component/Forms/DateForm";
+import RatingPage from "../Component/Rating/RatingPage";
+import TabsDefault from "../Component/Tabs/TabsDefault";
 
 class Product_Detail extends Component{
     state = {
@@ -34,15 +37,15 @@ class Product_Detail extends Component{
                     <div className="wrapper side-paddings">
                         <div className="product">
                             <div className="product-info">
-                                <h1>{this.state.post.title}</h1>
+                                <h2>{this.state.post.title}</h2>
+                                <RatingPage/>
                                 <p className="text-grey">{this.state.post.body}</p>
                                 <div className="product-price">$30.00</div>
                                 <div className="full-width">
                                     <form data-node-type="commerce-add-to-cart-form" data-commerce-sku-id="5bae129d35e11310a69a82d2" data-loading-text="Adding to cart..." data-commerce-product-id="5bae129d1c68cc806025c48d" className="w-commerce-commerceaddtocartform add-to-cart">
                                         <label htmlFor="quantity-652131f9f904302b3296412795400fe8" className="label">Jumlah Sewa</label>
-                                        <input type="bootstrap-datetimepicker" id="quantity-652131f9f904302b3296412795400fe8" name="commerce-add-to-cart-quantity-input" min="1" className="w-commerce-commerceaddtocartquantityinput input quantity-input" defaultValue="1" />
                                         <label htmlFor="quantity-652131f9f904302b3296412795400fe8" className="label">Tanggal Sewa</label>
-                                        <Date_Form/>  
+                                        <DateForm/>  
                                     </form>
                                     <Modals/>
                                 </div>
@@ -81,7 +84,7 @@ class Product_Detail extends Component{
                             </div>
                         </div>
                     </div>
-                    <Related_Product/>
+                    <Related/>
                 </div>
             </div>
         )

@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
 import Sidebar from "../Component/Konten/Sidebar";
-import Kategori_barang from "../Component/Konten/Sorting";
 import Cari from "../Component/Konten/Cari";
 import ListBarang from "../Component/ListBarang";
 import axios from 'axios';
+import Sorting from "../Component/Konten/Sorting";
 
 class Barang extends Component{
     state = {
@@ -36,7 +35,7 @@ class Barang extends Component{
             <div className="wrapper">
                 <div className="shop-header">
                     <h3 className="no-margin w-hidden-small w-hidden-tiny">Semua Barang</h3>
-                    <Kategori_barang/>
+                    <Sorting/>
                     <div className="shop-header-line">
                         <div className="shop-header-color green w-hidden-small w-hidden-tiny"></div>
                     </div>
