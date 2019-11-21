@@ -4894,12 +4894,12 @@ table.table a.btn.btn-black {
 
 .pagination .page-item.active .page-link {
   color: #fff;
-  background-color: #4285f4;
+  background-color: #a5c926;
   border-radius: 0.125rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   transition: all 0.2s linear; }
   .pagination .page-item.active .page-link:hover {
-    background-color: #4285f4; }
+    background-color: #a5c926; }
 
 .pagination .page-item.disabled .page-link {
   color: #868e96; }

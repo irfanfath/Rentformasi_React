@@ -4,6 +4,7 @@ import ListBarang from "../Component/ListBarang";
 import axios from 'axios';
 import Sorting from "../Component/Konten/Sorting";
 import Kategori from "../Component/Sidebars/Kategori";
+import PaginationPage from "../Component/Pagination/PaginationPage";
 
 class Barang extends Component{
     state = {
@@ -11,7 +12,8 @@ class Barang extends Component{
     }
 
     getPostAPI = () => {
-        axios.get('https://jsonplaceholder.typicode.com/albums?_sort=id')
+        // axios.get('https://jsonplaceholder.typicode.com/albums?_sort=id')
+        axios.get('https://jsonplaceholder.typicode.com/albums?_limit=10')
         .then((result)=>{
             this.setState({
                 post: result.data
@@ -60,7 +62,7 @@ class Barang extends Component{
                         </div>
                     </div>
                 </div>
- 
+                <PaginationPage/>                                  
             </div>
         </div>
         )
