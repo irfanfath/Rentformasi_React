@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Sidebar extends Component{
+class Kategori extends Component{
     render(){
         return(
                                 <div className="product-table">
@@ -34,4 +34,4 @@ class Sidebar extends Component{
     }
 }
 
-export default Sidebar;
+export default Kategori;

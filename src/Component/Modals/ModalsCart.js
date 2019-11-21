@@ -6,9 +6,9 @@ import {
   Modal
   
 } from "reactstrap";
-import Cart from "./Cart";
+import CartModal from "../Cart/CartModal";
 
-class Modals extends React.Component {
+class ModalsCart extends React.Component {
   state = {
     exampleModal: false
   };
@@ -43,7 +43,7 @@ class Modals extends React.Component {
               <span aria-hidden={true}>×</span>
             </button>
           </div>
-          <Cart/>
+          <CartModal/>
           <div className="modal-footer">
             <input type="submit" value="Sewa Lagi" className="w-commerce-commerceaddtocartbutton button" 
             onClick={() => this.toggleModal("exampleModal")}/>
@@ -57,4 +57,4 @@ class Modals extends React.Component {
   }
 }
 
-export default Modals;
+export default ModalsCart;

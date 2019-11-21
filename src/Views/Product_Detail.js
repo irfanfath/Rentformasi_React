@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import axios from "axios"
 
 import Related from "../Component/Related";
-import Modals from "../Component/Modals/Modals";
 import Profile from "../Component/Card/Profile";
-import DateForm from "../Component/Forms/DateForm";
 import RatingPage from "../Component/Rating/RatingPage";
 import JumlahSewa from "../Component/Forms/JumlahSewa";
+import ModalsCart from "../Component/Modals/ModalsCart";
+import DatePick from "../Component/Forms/DatePick";
 
 class Product_Detail extends Component{
     state = {
@@ -46,11 +46,10 @@ class Product_Detail extends Component{
                                         <label className="label">Jumlah Sewa</label>
                                         <JumlahSewa/>
                                         <label className="label">Tanggal Sewa</label>
-                                        <DateForm/>  &nbsp;&nbsp;&nbsp;
-                                        <DateForm/>
+                                        <DatePick/>
                                     </form>
                                 </div>
-                                <Modals/>
+                                <ModalsCart/>
                             </div>
                             <div className="product-image-wrapper"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae12942ca03553bf0d536c_33903-2-plush-toy-transparent-image-min.png" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 75vw, (max-width: 991px) 76vw, 32vw" srcSet="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae12942ca03553bf0d536c_33903-2-plush-toy-transparent-image-min-p-500.png 500w, https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae12942ca03553bf0d536c_33903-2-plush-toy-transparent-image-min.png 1200w" className="full-width" /></div>
                             <div className="product-details-wrapper">

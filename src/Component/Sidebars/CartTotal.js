@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Cart from "../Modals/Cart";
 import { Col, Form} from 'react-bootstrap';
+import CartModal from "../Cart/CartModal";
 
 class CartTotal extends Component{
     render(){
@@ -11,7 +11,7 @@ class CartTotal extends Component{
                 </div>
                 <div className="w-commerce-commercecartformwrapper">
                     <form className="w-commerce-commercecartform">
-                        <Cart/>
+                        <CartModal/>
                         <div className="w-commerce-commercecartfooter cart-footer">
                             <div className="w-commerce-commercecartlineitem">
                                 <div>Pilih Jasa Pengiriman</div>

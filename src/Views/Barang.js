@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Sidebar from "../Component/Konten/Sidebar";
 import Cari from "../Component/Konten/Cari";
 import ListBarang from "../Component/ListBarang";
 import axios from 'axios';
 import Sorting from "../Component/Konten/Sorting";
+import Kategori from "../Component/Sidebars/Kategori";
 
 class Barang extends Component{
     state = {
@@ -56,7 +56,7 @@ class Barang extends Component{
                                             }
                                     </div>
                             </div>
-                            <Sidebar/>
+                            <Kategori/>
                         </div>
                     </div>
                 </div>

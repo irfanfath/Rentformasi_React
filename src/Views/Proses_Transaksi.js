@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios"
-import MetodePembayaran from "../Component/Forms/MetodePembayaran";
+import MetodePembayaran from "../Component/Sidebars/MetodePembayaran";
 import CartTotal from "../Component/Sidebars/CartTotal";
 import InputPage from "../Component/Forms/InputPage";
 

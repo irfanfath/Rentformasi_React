@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Sidebar from "../Component/Konten/Sidebar";
 import Cari from "../Component/Konten/Cari";
 import Sorting from "../Component/Konten/Sorting";
+import Kategori from "../Component/Sidebars/Kategori";
 
 class Jasa extends Component{
     render(){
@@ -136,7 +136,7 @@ class Jasa extends Component{
                                     </div>
                                 </div>
                             </div>
-                            <Sidebar/>
+                            <Kategori/>
                         </div>
                     </div>
                 </div>
