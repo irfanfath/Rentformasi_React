@@ -18,7 +18,6 @@ class Product_Detail extends Component{
     componentDidMount(){
         let id = this.props.match.params.idBarang;
         axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`).then(res => {
-            console.log('result: ', res);
             let post = res.data;
             this.setState({
                 post : {
@@ -39,7 +38,7 @@ class Product_Detail extends Component{
                             <div className="product-info">
                                 <h2>{this.state.post.title}</h2>
                                 <RatingPage/>
-                                <p className="text-grey">{this.state.post.body}</p>
+                                <p className="text-grey">{this.state.post.body}&nbsp;500 transaksi</p>
                                 <div className="product-price">$30.00</div>
                                 <div className="full-width">
                                     <form className="w-commerce-commerceaddtocartform add-to-cart">

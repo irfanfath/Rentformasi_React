@@ -13,9 +13,15 @@ class CartModal extends Component{
             this.setState({
                 post: result.data
             })
-            console.log(result)
         })
-    } 
+    }
+
+    handleRemove = (data) => {
+        axios.delete(`https://jsonplaceholder.typicode.com/users/${data}`).then((res)=>{
+            this.getPostAPI()
+        })
+    }
+
 
     componentDidMount(){
         this.getPostAPI();
@@ -30,6 +36,7 @@ class CartModal extends Component{
                     this.state.post.map(post => {
                         return <ListCart key={post.id} 
                             data={post}
+                            remove={this.handleRemove}
                                 />
                     })
                 }

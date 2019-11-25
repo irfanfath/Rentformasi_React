@@ -2549,6 +2549,21 @@ textarea.w-select {
     height: 0%;
 }
 
+.quantitycart{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    text-align: end;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
 .w-commerce-commercecartiteminfo {
     display: -webkit-box;
     display: -webkit-flex;
@@ -6784,6 +6799,7 @@ p {
     font-size: 12px;
     line-height: 16px;
     text-decoration: underline;
+    text-align: end;
 }
 
 .cart-item {
