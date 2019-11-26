@@ -32,8 +32,7 @@ class Barang extends Component{
     render(){
         return(
         <div className="section">
-            <Cari/>
-            
+            <Cari/>          
             <div className="wrapper">
                 <div className="shop-header">
                     <h3 className="no-margin w-hidden-small w-hidden-tiny">Semua Barang</h3>
@@ -52,7 +51,7 @@ class Barang extends Component{
                                                 this.state.post.map(post => {
                                                     return <ListBarang key={post.id} 
                                                     data={post}
-                                                    goDetail={this.handleDetail }
+                                                    goDetail={this.handleDetail}
                                                     />
                                                 })
                                             }

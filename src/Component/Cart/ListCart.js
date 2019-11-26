@@ -1,5 +1,4 @@
 import React from "react";
-import JumlahSewa from "../Forms/JumlahSewa";
 
 const ListCart= (props) => {
     return(

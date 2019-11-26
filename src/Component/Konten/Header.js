@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import ButtonSuccess from "../Button/ButtonSuccess";
+import ButtonLogin from "../Button/ButtonLogin";
 import CartModal from "../Cart/CartModal";
 import {
     Modal
   } from "reactstrap";
+import SignIn from "../Modals/SignIn";
 
 class HalamanUtama extends Component{
     state = {
-        exampleModal: false
+        exampleModal: false,
+        loginModal: false
       };
       toggleModal = state => {
         this.setState({
@@ -65,7 +67,23 @@ class HalamanUtama extends Component{
                                 </div>
                             </Modal>
                         </div>
-                        <NavLink to="/akun" className="nav-link w-nav-link"><ButtonSuccess/></NavLink>
+                        <div className="nav-link w-nav-link" onClick={() => this.toggleModal("loginModal")}><ButtonLogin/>
+                            <Modal
+                                className="modal-dialog-centered"
+                                isOpen={this.state.loginModal}
+                                toggle={() => this.toggleModal("loginModal")}
+                                >
+                                <SignIn/>
+                                <div className="modal-footer">
+                                <p className="font-small grey-text d-flex justify-content-end">
+                                    Belum Punya Akun?
+                                    <NavLink to="/proses_transaksi" className="blue-text ml-1" onClick={() => this.toggleModal("loginModal")}>
+                                    Daftar Akun
+                                    </NavLink>
+                                </p>
+                                </div>
+                            </Modal>
+                        </div>
                     </div>
                 </div>
             </div>

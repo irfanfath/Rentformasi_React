@@ -22,11 +22,9 @@ class CartModal extends Component{
         })
     }
 
-
     componentDidMount(){
         this.getPostAPI();
     }
-
 
     render(){
         return(
@@ -45,9 +43,9 @@ class CartModal extends Component{
                     <div className="w-commerce-commercecartlineitem">
                         <div>Total</div>
                             <div className="w-commerce-commercecartordervalue">$30.00</div>
-                        </div>
-                    </div> 
-                </div>
+                    </div>
+                </div> 
+            </div>
         )
     }
 }

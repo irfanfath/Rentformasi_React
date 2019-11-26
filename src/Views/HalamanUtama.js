@@ -22,12 +22,12 @@ class HalamanUtama extends Component{
                 <div className="home-categories">
                     <div className="home-category-card"><img src="https://assets.website-files.com/5badda2935e11303a89a461e/5badf21356ac5470c84dfbf4_33903-2-plush-toy-transparent-image-min.png" sizes="(max-width: 479px) 100vw, (max-width: 991px) 176px, 220px" alt="" className="home-category-image-1" />
                         <div className="home-category-info-1">
-                            <h3>Sewa Barang</h3><a href="#" className="button small white w-button">Lihat Semua</a>
+                            <h3>Sewa Barang</h3><NavLink to="/barang" className="button small white w-button">Lihat Semua</NavLink>
                         </div>
                     </div>
                     <div className="home-category-card red"><img src="https://assets.website-files.com/5badda2935e11303a89a461e/5badf2131f2da24c02171c72_33727-9-wooden-toy-transparent-image-min.png" sizes="(max-width: 479px) 100vw, (max-width: 991px) 176px, 220px" alt="" className="home-category-image-2" />
                         <div className="home-category-info-2">
-                            <h3>Sewa Jasa</h3><a href="#" className="button small white w-button">Lihat Semua</a>
+                            <h3>Sewa Jasa</h3><NavLink to="/jasa" className="button small white w-button">Lihat Semua</NavLink>
                         </div>
                     </div>
                 </div>

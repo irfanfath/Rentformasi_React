@@ -1,10 +1,10 @@
 import React from "react";
 import { MDBBtn } from "mdbreact";
 
-const ButtonSuccess = () => {
+const ButtonLogin = () => {
   return (
       <MDBBtn outline color="success">Masuk</MDBBtn>
   );
 }
 
-export default ButtonSuccess;
+export default ButtonLogin;
