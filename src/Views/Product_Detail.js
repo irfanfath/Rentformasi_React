@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import axios from "axios"
+import {MDBIcon} from "mdbreact";
 
 import Related from "../Component/Related";
-import Profile from "../Component/Card/Profile";
-import RatingPage from "../Component/Rating/RatingPage";
 import JumlahSewa from "../Component/Forms/JumlahSewa";
 import ModalsCart from "../Component/Modals/ModalsCart";
 import DatePick from "../Component/Forms/DatePick";
+import PageProfile from "../Component/Card/PageProfile";
 
 class Product_Detail extends Component{
     state = {
@@ -36,8 +36,13 @@ class Product_Detail extends Component{
                         <div className="product">
                             <div className="product-info">
                                 <h2>{this.state.post.title}</h2>
-                                <RatingPage/>
-                                <p className="text-grey">25 Ulasan&nbsp;&nbsp;&nbsp;&nbsp;500 transaksi&nbsp;&nbsp;&nbsp;&nbsp;5 Pertanyaan</p>
+                                <div className="rating">
+              <MDBIcon icon="star" />
+              <MDBIcon icon="star" />
+              <MDBIcon icon="star" />
+              <MDBIcon icon="star" />
+              <MDBIcon far icon="star" />
+            </div>                                <p className="text-grey">25 Ulasan&nbsp;&nbsp;&nbsp;&nbsp;500 transaksi&nbsp;&nbsp;&nbsp;&nbsp;5 Pertanyaan</p>
                                 <div className="product-price">Rp. 500.000</div>
                                 <div className="full-width">
                                     <form className="w-commerce-commerceaddtocartform add-to-cart">
@@ -79,7 +84,8 @@ class Product_Detail extends Component{
                                     <p>{this.state.post.body}</p>
                                     <p>‍</p>
                                 </div>
-                                    <Profile/>
+                                    {/* <Profile/> */}
+                                    <PageProfile/>
                             </div>
                         </div>
                     </div>
