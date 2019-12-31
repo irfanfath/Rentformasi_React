@@ -3,14 +3,11 @@ import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCardF
 
 const PageProfile = () => {
   return (
-    <MDBCard className="m-2" style={{ width: "22rem" }} cascade ecommerce narrow>
+    <MDBCard className="m-2" style={{ width: "20rem", height: "30rem" }} cascade ecommerce narrow>
       <MDBCardImage cascade top src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/img%20(5).jpg" waves />
       <MDBCardBody cascade className="text-center">
-        <MDBCardTitle tag="h5">
-          Shoes
-        </MDBCardTitle>
         <MDBCardTitle>
-          <a href="#!"><strong>Product name</strong></a>
+          <a href="#!"><strong>Nama Vendor</strong></a>
         </MDBCardTitle>
         <MDBCardText>
           Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe

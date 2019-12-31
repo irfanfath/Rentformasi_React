@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { MDBRow, MDBCard, MDBCardBody, MDBTooltip, MDBTable, MDBTableBody, MDBTableHead, MDBInput, MDBBtn } from "mdbreact";
+import { MDBRow, MDBCardBody, MDBTooltip, MDBTable, MDBTableBody, MDBTableHead, MDBInput, MDBBtn } from "mdbreact";
 
 class Bill extends Component {
 state = {
@@ -35,7 +35,7 @@ state = {
         field: 'img',
       },
       {
-        label: <strong>Product</strong>,
+        label: <strong>Nama Produk</strong>,
         field: 'product'
       },
       {
@@ -43,7 +43,7 @@ state = {
         field: 'color'
       },
       {
-        label: <strong>Price</strong>,
+        label: <strong>Harga</strong>,
         field: 'price'
       },
       {
@@ -51,7 +51,7 @@ state = {
         field: 'qty'
       },
       {
-        label: <strong>Amount</strong>,
+        label: <strong>Subtotal</strong>,
         field: 'amount'
       },
       {
@@ -89,15 +89,13 @@ render() {
     });
 
     return (
-    <MDBRow className="my-2" center>
-      <MDBCard className="w-100">
+    <MDBRow className="my-8">
         <MDBCardBody>
-          <MDBTable className="product-table">
+          <MDBTable className="cart-table">
             <MDBTableHead className="font-weight-bold" color="mdb-color lighten-5" columns={columns} />
             <MDBTableBody rows={rows} />
           </MDBTable>
         </MDBCardBody>
-      </MDBCard>
     </MDBRow>
     );
   }

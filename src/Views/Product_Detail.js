@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import axios from "axios"
 import {MDBIcon} from "mdbreact";
 
@@ -37,12 +38,13 @@ class Product_Detail extends Component{
                             <div className="product-info">
                                 <h2>{this.state.post.title}</h2>
                                 <div className="rating">
-              <MDBIcon icon="star" />
-              <MDBIcon icon="star" />
-              <MDBIcon icon="star" />
-              <MDBIcon icon="star" />
-              <MDBIcon far icon="star" />
-            </div>                                <p className="text-grey">25 Ulasan&nbsp;&nbsp;&nbsp;&nbsp;500 transaksi&nbsp;&nbsp;&nbsp;&nbsp;5 Pertanyaan</p>
+                                    <MDBIcon icon="star" />
+                                    <MDBIcon icon="star" />
+                                    <MDBIcon icon="star" />
+                                    <MDBIcon icon="star" />
+                                    <MDBIcon far icon="star" />
+                                </div>                               
+                                <p className="text-grey">25 Ulasan&nbsp;&nbsp;&nbsp;&nbsp;500 transaksi&nbsp;&nbsp;&nbsp;&nbsp;5 Pertanyaan</p>
                                 <div className="product-price">Rp. 500.000</div>
                                 <div className="full-width">
                                     <form className="w-commerce-commerceaddtocartform add-to-cart">
@@ -52,7 +54,10 @@ class Product_Detail extends Component{
                                         <DatePick/>
                                     </form>
                                 </div>
-                                <ModalsCart/>
+                                {/* <ModalsCart/> */}
+                                <NavLink to="/cart">
+                                    <input type="submit" value="Sewa Sekarang" className="w-commerce-commerceaddtocartbutton button" />
+                                </NavLink>
                             </div>
                             <div className="product-image-wrapper"><img data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D" src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae12942ca03553bf0d536c_33903-2-plush-toy-transparent-image-min.png" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 75vw, (max-width: 991px) 76vw, 32vw" srcSet="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae12942ca03553bf0d536c_33903-2-plush-toy-transparent-image-min-p-500.png 500w, https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae12942ca03553bf0d536c_33903-2-plush-toy-transparent-image-min.png 1200w" className="full-width" /></div>
                             <div className="product-details-wrapper">
@@ -84,7 +89,6 @@ class Product_Detail extends Component{
                                     <p>{this.state.post.body}</p>
                                     <p>‍</p>
                                 </div>
-                                    {/* <Profile/> */}
                                     <PageProfile/>
                             </div>
                         </div>

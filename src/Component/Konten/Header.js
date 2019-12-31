@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import ButtonLogin from "../Button/ButtonLogin";
 import CartModal from "../Cart/CartModal";
+import CartValue from "../Cart/CartValue";
 import {
     Modal
   } from "reactstrap";
@@ -31,6 +32,7 @@ class HalamanUtama extends Component{
                                 <NavLink to="/barang" className="nav-link w-nav-link">Sewa Barang</NavLink>
                                 <NavLink to="/jasa" className="nav-link w-nav-link">Sewa Jasa</NavLink>
                                 <NavLink to="/bantuan" className="nav-link w-nav-link">Bantuan</NavLink>
+                                <NavLink to="/cart"><i className="material-icons">cart</i></NavLink>
                             </nav>
                             <div className="w-commerce-commercecartopenlink cart-button w-inline-block">
                                 <div className="w-inline-block" onClick={() => this.toggleModal("exampleModal")}>Keranjang</div>
@@ -56,10 +58,12 @@ class HalamanUtama extends Component{
                                     <span aria-hidden={true}>×</span>
                                     </button>
                                 </div>
-                                <CartModal/>
+                                <CartValue/>
                                 <div className="modal-footer">
-                                    <input type="submit" value="Sewa Lagi" className="w-commerce-commerceaddtocartbutton button" 
+                                    <NavLink to="/cart" className="nav-link-product w-nav-link">
+                                    <input type="submit" value="Perbarui" className="w-commerce-commerceaddtocartbutton button" 
                                     onClick={() => this.toggleModal("exampleModal")}/>
+                                    </NavLink>
                                     <NavLink to="/proses_transaksi" className="nav-link-product w-nav-link">
                                     <input type="submit" value="Bayar Sekarang" className="w-commerce-commerceaddtocartbutton button"
                                     onClick={() => this.toggleModal("exampleModal")}/>

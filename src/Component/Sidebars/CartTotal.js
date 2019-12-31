@@ -1,8 +1,22 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux'
 import { Col, Form} from 'react-bootstrap';
-import CartModal from "../Cart/CartModal";
 
 class CartTotal extends Component{
+    componentWillUnmount() {
+        if(this.refs.shipping.checked)
+             this.props.substractShipping()
+   }
+
+   handleChecked = (e)=>{
+       if(e.target.checked){
+           this.props.addShipping();
+       }
+       else{
+           this.props.substractShipping();
+       }
+   }
+
     render(){
         return(
             <div className="w-cart-review cart-review">
@@ -11,38 +25,49 @@ class CartTotal extends Component{
                 </div>
                 <div className="w-commerce-commercecartformwrapper">
                     <form className="w-commerce-commercecartform">
-                        <CartModal/>
                         <div className="w-commerce-commercecartfooter cart-footer">
                             <div className="w-commerce-commercecartlineitem">
-                                <div>Pilih Jasa Pengiriman</div>
-                            </div>
-                            <div className="w-commerce-commercecartlist cart-list">    
-                                <Col md={4}>
-                                    <Form.Check
-                                    type="radio"
-                                    label="JNE"
-                                    name="formHorizontalRadios"
-                                    id="pengirimanradios1"
-                                    />
-                                    <Form.Check
-                                    type="radio"
-                                    label="SICEPAT"
-                                    name="formHorizontalRadios"
-                                    id="pengirimanradios2"
-                                    />
-                                    <Form.Check
-                                    type="radio"
-                                    label="COD"
-                                    name="formHorizontalRadios"
-                                    id="pengirimanradios3"
-                                    />
-                                </Col>
+                                <div>Biaya Sewa</div>
+                                <div className="w-commerce-commercecartordervalue">${this.props.total}</div>
                             </div>
                         </div> 
                         <div className="w-commerce-commercecartfooter cart-footer">
                             <div className="w-commerce-commercecartlineitem">
+                                <div>Pilih Jenis Pengiriman</div>
+                            </div>
+                            <div className="w-commerce-commercecartlist cart-list">    
+                                    <label>
+                                        <Form.Check 
+                                            type="radio" 
+                                            ref="shipping" 
+                                            onChange= {this.handleChecked} 
+                                            label = "JNE"
+                                            name="formHorizontalRadios"
+                                            id="pengirimanradios1"
+                                        />
+                                        <Form.Check 
+                                            type="radio" 
+                                            ref="shipping" 
+                                            onChange= {this.handleChecked} 
+                                            label = "TIKI"
+                                            name="formHorizontalRadios"
+                                            id="pengirimanradios2"
+                                        />
+                                        <Form.Check 
+                                            type="radio" 
+                                            ref="shipping" 
+                                            onChange= {this.handleChecked} 
+                                            label = "COD"
+                                            name="formHorizontalRadios"
+                                            id="pengirimanradios3"
+                                        />
+                                    </label>
+                            </div> 
+                        </div> 
+                        <div className="w-commerce-commercecartfooter cart-footer">
+                            <div className="w-commerce-commercecartlineitem">
                                 <div>Subtotal</div>
-                                <div className="w-commerce-commercecartordervalue">$30.00</div>
+                                <div className="w-commerce-commercecartordervalue">: ${this.props.total}</div>
                             </div>
                         </div>  
                     </form>
@@ -52,4 +77,18 @@ class CartTotal extends Component{
     }
 }
 
-export default CartTotal;
+const mapStateToProps = (state)=>{
+    return{
+        addedItems: state.addedItems,
+        total: state.total
+    }
+}
+
+const mapDispatchToProps = (dispatch)=>{
+    return{
+        addShipping: ()=>{dispatch({type: 'ADD_SHIPPING'})},
+        substractShipping: ()=>{dispatch({type: 'SUB_SHIPPING'})}
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(CartTotal)

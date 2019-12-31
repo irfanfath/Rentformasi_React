@@ -20,10 +20,8 @@ class ModalsCart extends React.Component {
   render() {
     return (
       <>
-        {/* Button trigger modal */}
         <input type="submit" value="Sewa Sekarang" className="w-commerce-commerceaddtocartbutton button" 
         onClick={() => this.toggleModal("exampleModal")}/>
-        {/* Modal */}
         <Modal
           className="modal-dialog-centered"
           isOpen={this.state.exampleModal}

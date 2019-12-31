@@ -13,6 +13,8 @@ import Proses_Transaksi from "./Views/Proses_Transaksi";
 import Konfirmasi from "./Views/Konfirmasi";
 import DynamicScrollToTop from "./Component/DynamicScrollToTop";
 import SelesaiTransaksi from "./Views/SelesaiTransaksi";
+import Sewaan from "./Views/Sewaan";
+import Cart from "./Views/Cart";
  
 class Main extends Component {
   render() {
@@ -30,6 +32,8 @@ class Main extends Component {
             <Route path="/proses_transaksi" component={Proses_Transaksi}/>
             <Route path="/konfirmasi" component={Konfirmasi}/>
             <Route path="/selesaitransaksi" component={SelesaiTransaksi}/>
+            <Route path="/sewaan" component={Sewaan}/>
+            <Route path="/cart" component={Cart}/>
           <Footer/>
         </HashRouter>
     );

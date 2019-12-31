@@ -42,7 +42,7 @@ class CartModal extends Component{
                 <div className="w-commerce-commercecartfooter cart-footer">
                     <div className="w-commerce-commercecartlineitem">
                         <div>Total</div>
-                            <div className="w-commerce-commercecartordervalue">$30.00</div>
+                        <div className="w-commerce-commercecartordervalue">$30.00</div>
                     </div>
                 </div> 
             </div>
