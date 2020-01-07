@@ -23,8 +23,8 @@ class Main extends Component {
           <Header/>
           <DynamicScrollToTop/>
             <Route exact path="/" component={HalamanUtama}/>
-            <Route path="/barang" component={Barang}/>
-            <Route path="/jasa" component={Jasa}/>
+            <Route path="/barang" component={Sewaan}/>
+            <Route path="/jasa" component={Sewaan}/>
             <Route path="/bantuan" component={Bantuan}/>
             <Route path="/about" component={About}/>
             <Route path="/syarat" component={Syarat}/>

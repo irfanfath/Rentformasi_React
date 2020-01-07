@@ -32,7 +32,7 @@ class HalamanUtama extends Component{
                                 <NavLink to="/barang" className="nav-link w-nav-link">Sewa Barang</NavLink>
                                 <NavLink to="/jasa" className="nav-link w-nav-link">Sewa Jasa</NavLink>
                                 <NavLink to="/bantuan" className="nav-link w-nav-link">Bantuan</NavLink>
-                                <NavLink to="/cart"><i className="material-icons">cart</i></NavLink>
+                                {/* <NavLink to="/cart"><i className="material-icons">cart</i></NavLink> */}
                             </nav>
                             <div className="w-commerce-commercecartopenlink cart-button w-inline-block">
                                 <div className="w-inline-block" onClick={() => this.toggleModal("exampleModal")}>Keranjang</div>

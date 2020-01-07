@@ -48,8 +48,8 @@ class Product_Detail extends Component{
                                 <div className="product-price">Rp. 500.000</div>
                                 <div className="full-width">
                                     <form className="w-commerce-commerceaddtocartform add-to-cart">
-                                        <label className="label">Jumlah Sewa</label>
-                                        <JumlahSewa/>
+                                        {/* <label className="label">Jumlah Sewa</label>
+                                        <JumlahSewa/> */}
                                         <label className="label">Tanggal Sewa</label>
                                         <DatePick/>
                                     </form>

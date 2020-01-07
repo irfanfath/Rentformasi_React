@@ -26,7 +26,7 @@ import PaginationPage from "../Component/Pagination/PaginationPage";
                             <div className="product-card-price">${item.price}</div>
                         </div>
                         <NavLink to="/cart" className="nav-link-product w-nav-link">
-                            <span className="btn-floating halfway-fab waves-effect waves-light red" onClick={()=>{this.handleClick(item.id)}}><i className="material-icons">add</i></span>
+                            <div className="product-card-price" onClick={()=>{this.handleClick(item.id)}}><i className="material-icons">add to cart</i></div>
                         </NavLink>
                 </div>
 
