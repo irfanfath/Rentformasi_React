@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Dropdown } from 'react-bootstrap';
 
-class Urutan extends Component{
+class Lokasi extends Component{
     render(){
         return(
             <Dropdown>
@@ -20,4 +20,4 @@ class Urutan extends Component{
     }
 }
 
-export default Urutan;
+export default Lokasi;
